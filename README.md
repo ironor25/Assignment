@@ -38,15 +38,15 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
 
 
 4. **Run the project:**
-    - For Python projects:
-        ```bash
-        uvicorn api_routes:app --reload
-        ```
+    ```bash
+    uvicorn api_routes:app --reload
+    ```
+    
 5. **Sample Input Data**
 
         You can use the following sample data to test the database operations:
         Open Postman to test the routes.
-        
+
         ```json
         
                 {
