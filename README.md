@@ -54,37 +54,38 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
               
         
         ```
-5. **Routes Input Method**
-     
-     **Get:**
-        ```no need to input anything.```
+5. **API Routes & Input Methods**
 
-     **POST:**
+    - **GET**
+      - No input required. Simply send a GET request to retrieve data.
 
-        ``` {
+    - **POST**
+      - Add a new entry by sending JSON data:
+         ```json
+         {
             "date": "2025-06-10",
             "time": "10:30:00",
             "message": "Doctor's appointment"
-            }
-        ```
+         }
+         ```
 
-      **PUT:**
-        ```Json containing ID with details to be modified.
-                {
-                "id": 1,
-                "date": "2025-06-10",
-                "time": "10:30:00",
-                "message": "Therapist appointment"
-                }
-            ```
+    - **PUT**
+      - Update an existing entry by providing the `id` and updated details:
+         ```json
+         {
+            "id": 1,
+            "date": "2025-06-10",
+            "time": "10:30:00",
+            "message": "Therapist appointment"
+         }
+         ```
 
-       **DELETE:**
-       ```
-       Json containing ID only
-
-        {
-        "id": 1,
-        }
+    - **DELETE**
+      - Delete an entry by specifying the `id`:
+         ```json
+         {
+            "id": 1
+         }
          ```
 
 ---
