@@ -42,7 +42,30 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
         ```bash
         uvicorn api_routes:app --reload
         ```
+5. **Sample Input Data**
 
+        You can use the following sample data to test the database operations:
+        Open Postman to test the routes.
+        
+        ```json
+        
+                {
+                    "id": 1,
+                    "date": "2025-06-10",
+                    "time": "10:30:00",
+                    "message": "Doctor's appointment"
+                },
+                {
+                    "id": 2,
+                    "date": "2025-06-11",
+                    "time": "09:00:00",
+                    "message": "Team standup meeting"
+                }
+              
+        
+        ```
+
+        You may insert this data using your API endpoints or directly into the SQLite database for testing purposes.
 
 
 ---
