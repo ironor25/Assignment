@@ -58,22 +58,25 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
      
      **Get:**
         ```no need to input anything.```
-        
+
      **POST:**
+
         ``` {
             "date": "2025-06-10",
             "time": "10:30:00",
             "message": "Doctor's appointment"
-            }```
+            }
+        ```
 
       **PUT:**
-      ``Json containing ID with details to be modified.
+        ```Json containing ID with details to be modified.
                 {
                 "id": 1,
                 "date": "2025-06-10",
                 "time": "10:30:00",
                 "message": "Therapist appointment"
-                }```
+                }
+            ```
 
        **DELETE:**
        ```
@@ -81,7 +84,8 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
 
         {
         "id": 1,
-        } ```
+        }
+         ```
 
 ---
 
