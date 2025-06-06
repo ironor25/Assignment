@@ -18,8 +18,8 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/internship_work.git
-    cd internship_work
+    git clone https://github.com/ironor25/Assignment.git
+    cd Assignment
     ```
 
 2. **Create and activate a Python virtual environment:**
