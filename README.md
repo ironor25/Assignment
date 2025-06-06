@@ -2,17 +2,7 @@
 
 This repository contains completed assignment. It includes code samples, documentation assignment I worked on.
 
-## 🚀 Getting Started
-
-Welcome to the **Internship Assignment** repository! This guide will help you set up the environment and run the projects smoothly.
-
 Using SQLAlchemy ORM to use SQLlite for performing database operations.
-
-### Prerequisites
-
-- [Python 3.8+](https://www.python.org/downloads/)
-- [Git](https://git-scm.com/)
-
 
 ### Setup Instructions
 
@@ -41,7 +31,7 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
     ```bash
     uvicorn api_routes:app --reload
     ```
-    
+
 5. **Sample Input Data**
 
         You can use the following sample data to test the database operations:
@@ -64,9 +54,34 @@ Using SQLAlchemy ORM to use SQLlite for performing database operations.
               
         
         ```
+5. **Routes Input Method**
+     
+     **Get:**
+        ```no need to input anything.```
+        
+     **POST:**
+        ``` {
+            "date": "2025-06-10",
+            "time": "10:30:00",
+            "message": "Doctor's appointment"
+            }```
 
-        You may insert this data using your API endpoints or directly into the SQLite database for testing purposes.
+      **PUT:**
+      ``Json containing ID with details to be modified.
+                {
+                "id": 1,
+                "date": "2025-06-10",
+                "time": "10:30:00",
+                "message": "Therapist appointment"
+                }```
 
+       **DELETE:**
+       ```
+       Json containing ID only
+
+        {
+        "id": 1,
+        } ```
 
 ---
 
